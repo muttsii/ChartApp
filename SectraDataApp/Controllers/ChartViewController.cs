@@ -11,16 +11,16 @@ namespace SectraDataApp.Controllers
 
     public class ChartController : Controller
     {
-        public ActionResult PatchValue(string getPatchValue)
+        public ActionResult PatchValue(string GetChart)
         {
             PatchModel patchModel = new PatchModel();
-            patchModel.PatchValue = getPatchValue;
+            patchModel.PatchValue = GetChart;
 
-            return View();
+            return View(GetChart);
         }
 
 
-        public ActionResult DashBoardcount(string getPatchValue)
+        public JsonResult DashBoardcount(string getPatchValue)
         {
             try
             {

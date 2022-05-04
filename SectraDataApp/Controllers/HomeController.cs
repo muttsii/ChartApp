@@ -27,10 +27,15 @@ namespace SectraDataApp.Controllers
         {
             return View();
         }
-        //public ActionResult DashBoardcount(PatchModel patchModel)
+        //public ActionResult SetDashBoardcount(string patchvalue)
         //{
-        //    var model = new PatchModel();
         //    return View(model);
+        //}
+        //public ActionResult PatchValue(String GetChart)
+        //{
+        //    string patchModel = GetChart;
+
+        //    return View(patchModel);
         //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -39,8 +44,8 @@ namespace SectraDataApp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        [HttpPost]
-        public ActionResult DashBoardcount(PatchModel patchModel)
+        
+        public JsonResult DashBoardcount([FromBody] string patchModel)
         {
             //PatchModel(model.PatchValue);
             try
@@ -48,12 +53,13 @@ namespace SectraDataApp.Controllers
                     
                     string[] dashBoardcount = new string[19];
                     string Patch = "23.2.6.5161";
+                    Patch = patchModel;
                     string connectionString;
                     SqlConnection cnn;
                     connectionString = @"Data Source=(localdb)\mssqllocaldb;Initial Catalog=MinimalApiSectraDb;Integrated Security=True;MultipleActiveResultSets=True";
                     cnn = new(connectionString);
                     cnn.Open();
-                    SqlCommand cmd = new("SELECT count (root) as UK,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'UK' AND programpatch = '" + patchModel + "') as DACH,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'NA' AND programpatch = '" + patchModel + "') as NA,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Southeast_Imaging' AND programpatch = '" + patchModel + "') as Southeast_Imaging,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Commit' AND programpatch = '" + patchModel + "') as Commït,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Benelux' AND programpatch = '" + patchModel + "') as Benelux,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Scandinavia' AND programpatch = '" + patchModel + "') as Scandinavia,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Iberia' AND programpatch = '" + patchModel + "') as Iberia,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'PhilipsDACH' AND programpatch = '" + patchModel + "') as PhilipsDACH,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Medi-Far' AND programpatch = '" + patchModel + "') as MediFar,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'ANZ' AND programpatch = '" + patchModel + "') as ANZ,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'MedIT' AND programpatch = '" + patchModel + "') as Medit,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'France' AND programpatch = '" + patchModel + "') as France,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'SouthAfrica' AND programpatch = '" + patchModel + "') as SouthAfrica,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Preop Online' AND programpatch = '" + patchModel + "') as PreopOnline,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'AttirhMedico' AND programpatch = '" + patchModel + "') as AttiehMedico,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Answer_Medical' AND programpatch = '" + patchModel + "') as Answer_Medical,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Education' AND programpatch = '" + patchModel + "') as Education FROM JsonDataSectraUseThis WHERE root = 'DACH' AND programpatch = '" + patchModel + "'", cnn);
+                    SqlCommand cmd = new("SELECT count (root) as UK,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'UK' AND programpatch = '" + Patch + "') as DACH,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'NA' AND programpatch = '" + Patch + "') as NA,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Southeast_Imaging' AND programpatch = '" + Patch + "') as Southeast_Imaging,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Commit' AND programpatch = '" + Patch + "') as Commït,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Benelux' AND programpatch = '" + Patch + "') as Benelux,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Scandinavia' AND programpatch = '" + Patch + "') as Scandinavia,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Iberia' AND programpatch = '" + Patch + "') as Iberia,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'PhilipsDACH' AND programpatch = '" + Patch + "') as PhilipsDACH,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Medi-Far' AND programpatch = '" + Patch + "') as MediFar,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'ANZ' AND programpatch = '" + Patch + "') as ANZ,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'MedIT' AND programpatch = '" + Patch + "') as Medit,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'France' AND programpatch = '" + Patch + "') as France,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'SouthAfrica' AND programpatch = '" + Patch + "') as SouthAfrica,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Preop Online' AND programpatch = '" + Patch + "') as PreopOnline,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'AttirhMedico' AND programpatch = '" + Patch + "') as AttiehMedico,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Answer_Medical' AND programpatch = '" + Patch + "') as Answer_Medical,(SELECT count (root) FROM JsonDataSectraUseThis WHERE root = 'Education' AND programpatch = '" + Patch + "') as Education FROM JsonDataSectraUseThis WHERE root = 'DACH' AND programpatch = '" + Patch + "'", cnn);
                     DataTable dt = new();
                     SqlDataAdapter cmd1 = new(cmd);
                     cmd1.SelectCommand = cmd;

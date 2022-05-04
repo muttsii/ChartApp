@@ -676,11 +676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ma-jos\\Documents\\repos\\dataApp\\SectraDataApp\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ma-jos\\Documents\\repos\\NewChart\\SectraDataApp\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\ma-jos\\Documents\\repos\\dataApp\\SectraDataApp\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\ma-jos\\Documents\\repos\\NewChart\\SectraDataApp\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\ma-jos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ma-jos\\Documents\\repos\\dataApp\\SectraDataApp\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\ma-jos\\Documents\\repos\\NewChart\\SectraDataApp\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

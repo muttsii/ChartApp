@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "waKMvETsS4uj2/ln9Pl4gfL/PmVNBXQlWqvs0dR0lqfl15KocqLgXbomeldx3autaO2x9sY7fNEr+kmdDMdBjg==",
+  "dgSpecHash": "4Sn6NpiN+siNprlXUSqt+9wMB1aIgeyHKFjL65Pzcz1FrHHP5M8cwdG2tli4VzdB9nFcNy+oixJjS3onnh2PNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ma-jos\\Documents\\repos\\dataApp\\SectraDataApp\\SectraDataApp\\SectraDataApp.csproj",
+  "projectFilePath": "C:\\Users\\ma-jos\\Documents\\repos\\NewChart\\SectraDataApp\\SectraDataApp\\SectraDataApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ma-jos\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\ma-jos\\.nuget\\packages\\jquery\\1.8.0\\jquery.1.8.0.nupkg.sha512",

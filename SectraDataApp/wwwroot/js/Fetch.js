@@ -2,8 +2,10 @@
 
     $.ajax({
         type: "POST",
-        url: 'Home/DashBoardcount',
-        data: JSON.stringify({}),
+        url: 'Home/ChartView',
+        data: JSON.stringify({
+            PatchValue: '23.1.7.4531',
+        }),
         contentType: "Application/json:charset=utf-8",
         dataType: "json",
         success: function (json) {
