@@ -1,0 +1,89 @@
+﻿@model SectraDataApp.Models.PatchModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://cdn.jsdelivr.net/npm/ajax-client@2.0.2/lib/ajax-client.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+@*<h2>Calculate Simple Interest</h2>  
+<fieldset>  
+        <legend>Calculate Simple Interest</legend>  
+    @using (Ajax.BeginForm("CalculateSimpleInterestResult","CalculateSimpleInterest",  
+                            new AjaxOptions { UpdateTargetId = "divInterestDeatils" }))  
+    {  
+        <div id="divInterestDeatils"></div>  
+        <ol>  
+            <li>  
+                @Html.Label("Amount")  
+                @Html.TextBox("txtAmount")  
+            </li>  
+            <li>  
+                @Html.Label("Rate")  
+                @Html.TextBox("txtRate")  
+            </li>  
+            <li>  
+                @Html.Label("Year")  
+                @Html.TextBox("txtYear")  
+            </li>  
+        </ol>  
+    <button>Calculate</button>  
+    }     
+</fieldset> *@
+    
+@*<form method="post" action"Home\ChartVew">
+  <label for="GetChart">Patch to generate chart</label>
+  <input type="text" id="GetChartid" name="GetChart" value="" />
+  <br/>
+  <input type="submit" value="Get Chart" />
+</form>*@
+
+@*@using (Html.BeginForm("DashBoardcount","Home",FormMethod.Post))
+{
+    @Html.TextBoxFor(model =>model.PatchValue)
+    <button type="submit">Get Chart</button>
+}*@
+
+@using (Html.BeginForm()) 
+ {
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Chart</h4>
+        <p>Input patch as follows 11.1.1.1111 or 11.1.11.1111</p>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.PatchValue, htmlAttributes: new { 
+                           @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                 @Html.EditorFor(model => model.PatchValue, new { 
+                                 htmlAttributes = new { @class = "form-control" } })
+                                 
+                 @Html.ValidationMessageFor(model => model.PatchValue, "", 
+                                            new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" onclick="DashBoardcount()" value="Get Chart" class="btn btn-default" 
+                 />
+            </div>
+        </div>
+   </div>
+}
+
+
+<figure class="highcharts-figure">
+  <div id="container"></div>
+  <p class="highcharts-description">
+    Chart to show patch info.
+  </p>
+</figure>
+
+<script src="~/lib/jquery.unobtrusive-ajax.js"> </script>
+<script src=~/js/dashboard.js></script>
+<script src=~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js></script>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ajax-client": "^2.1.1",
+    "jquery-ajax-unobtrusive": "^3.2.6"
+  }
+}
