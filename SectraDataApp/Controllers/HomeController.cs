@@ -43,9 +43,10 @@ namespace SectraDataApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        
-        public JsonResult DashBoardcount([FromBody] string patchModel)
+    
+        [Produces("application/json")]
+    
+        public JsonResult DashBoardcount([FromBody] string PatchValue)
         {
             //PatchModel(model.PatchValue);
             try
@@ -53,7 +54,7 @@ namespace SectraDataApp.Controllers
                     
                     string[] dashBoardcount = new string[19];
                     string Patch = "23.2.6.5161";
-                    Patch = patchModel;
+                    //Patch = PatchValue;
                     string connectionString;
                     SqlConnection cnn;
                     connectionString = @"Data Source=(localdb)\mssqllocaldb;Initial Catalog=MinimalApiSectraDb;Integrated Security=True;MultipleActiveResultSets=True";

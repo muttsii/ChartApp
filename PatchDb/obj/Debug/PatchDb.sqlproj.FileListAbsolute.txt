@@ -1,0 +1,6 @@
+C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\PatchDb\bin\Debug\PatchDb.dacpac
+C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\PatchDb\bin\Debug\PatchDb.dll
+C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\PatchDb\bin\Debug\PatchDb.pdb
+C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\PatchDb\obj\Debug\PatchDb.sqlproj.AssemblyReference.cache
+C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\PatchDb\obj\Debug\PatchDb.dll
+C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\PatchDb\obj\Debug\PatchDb.pdb

@@ -1,0 +1,21 @@
+﻿@model SectraDataApp.Models.PatchModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Json upload to database</h1>
+
+<hr/>
+
+<center>
+    @using (Html.BeginForm("UploadJson", "JsonData",FormMethod.Post,new {encyte = "multipart/foorm_data"}))
+    {
+    <h3> @ViewBag.errmsg</h3>
+    <h3> @ViewBag.message</h3>
+    <input type="file" id="Jsonfile" name="filejson"/>
+    <p>
+        <input type="submit" value="Save" />
+    </p>
+    }
+</center>

@@ -9,8 +9,12 @@ namespace SectraDataApp.Controllers
 {
     [Produces("application/json")]
 
-    public class ChartController : Controller
+    public class ChartViewController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
         public ActionResult PatchValue(string GetChart)
         {
             PatchModel patchModel = new PatchModel();

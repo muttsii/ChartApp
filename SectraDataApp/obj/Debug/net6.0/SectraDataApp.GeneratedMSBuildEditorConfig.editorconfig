@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\SectraDataApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/ChartView/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRWaWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Home/ChartView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFydFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +29,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/JsonData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnNvbkRhdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Shared/Error.cshtml]

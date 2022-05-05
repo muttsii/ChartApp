@@ -8,41 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SectraDataApp
 build_property.RootNamespace = SectraDataApp
-build_property.ProjectDir = C:\Users\ma-jos\Documents\repos\dataApp\SectraDataApp\SectraDataApp\
+build_property.ProjectDir = C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\SectraDataApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ma-jos\Documents\repos\dataApp\SectraDataApp\SectraDataApp
+build_property.MSBuildProjectDirectory = C:\Users\ma-jos\Documents\repos\NewChart\SectraDataApp\SectraDataApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/Home/ChartView.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/ChartView/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRWaWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Home/ChartView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFydFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/Home/Index.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/Home/Privacy.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/Shared/Error.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Json/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnNvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/_ViewImports.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/_ViewStart.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ma-jos/Documents/repos/dataApp/SectraDataApp/SectraDataApp/Views/Shared/_Layout.cshtml]
+[C:/Users/ma-jos/Documents/repos/NewChart/SectraDataApp/SectraDataApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jj1qhdl7uz

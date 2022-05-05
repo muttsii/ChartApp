@@ -2,7 +2,7 @@
 
     $.ajax({
         type: "POST",
-        url: 'Home/ChartView',
+        url: 'Home/DashBoardcount',
         data: JSON.stringify({
             PatchValue: '23.1.7.4531',
         }),
